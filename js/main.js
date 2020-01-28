@@ -142,13 +142,15 @@ responsive: [
 
 });
 if(window.innerWidth > 768) {
- $('.explore__slider').slick({
+  $('.explore__slider').slick({
 prevArrow: false,
 nextArrow: false,
 slidesToShow: 1,
 centerPadding: '50px',
 centerMode: true,
 autoplay: true,
+swipe: true,
+
 
 responsive: [
 {
@@ -184,6 +186,8 @@ responsive: [
 });
 
 }
+
+
 
 if(window.innerWidth < 768) {
  $('.slider-all-news').slick({
