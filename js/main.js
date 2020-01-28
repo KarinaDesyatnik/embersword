@@ -148,6 +148,7 @@ nextArrow: false,
 slidesToShow: 1,
 centerPadding: '50px',
 centerMode: true,
+autoplay: true,
 
 responsive: [
 {
@@ -382,7 +383,7 @@ $(document).on('click', '.media__play-button', function() {
  $(this).parent().find('.media__pause-button').show();
 
 });
-$(document).on('click', '.media__pause-button', function() {
+$(document).on('click', '.items_slider--photo, .next, .prev', function() {
   var $video = $('#video'),
     src = $video.attr('src');
  
