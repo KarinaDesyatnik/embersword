@@ -63,6 +63,10 @@ $('.media__play-btn').click(function(){
     // $('.slider-nav .items_slider--video').toggleClass('active');
   });
 
+$().fancybox({
+    selector : '.imglist a:visible'
+});
+
 
 $('.slider-nav .items_slider--video').click(function(){ 
    // $('.media__play-button').toggleClass('active');
@@ -316,11 +320,11 @@ jQuery(function($){
 //---------start video popup--------------
 $('.video-popup-link').click(function(e){
    e.preventDefault();
-    $('.video-popup').show();
+    $('.video-popup').fadeIn();
 
   })
-$('.close').click(function(e){
-    $('.video-popup').hide();
+$('.close-video').click(function(e){
+    $('.video-popup').fadeOut();
   })
 
 
@@ -398,6 +402,30 @@ $(document).on('click', '.items_slider--photo, .next, .prev', function() {
 });
 
 
+$(document).on('click', '.play-button', function() {
+  var $video2 = $('#video-trailer'),
+    src = $video2.attr('src');
+ 
+  $video2.attr('src', src + '&autoplay=1');
+
+
+});
+
+$(document).on('click', '.video-popup', function() {
+  var $video2 = $('#video-trailer'),
+    src = $video2.attr('src');
+ 
+  $video2.attr('src', src + 'pause');
+});
+
+$(document).on('click', '.play-button', function() {
+  var $video2 = $('#video-trailer'),
+    src = $video2.attr('src');
+ 
+  $video2.attr('src', src + '&autoplay=1');
+
+
+});
 
 // $(document).on('click', '.media__play-button.active', function() {
 //   var $video = $('#video'),
