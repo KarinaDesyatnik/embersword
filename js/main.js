@@ -55,17 +55,13 @@ $('.scroll-down').show();
 }
 });
 
-
-
 $('.media__play-btn').click(function(){ 
     $(this).toggleClass('active');
     //  $('.media__slider .items_slider--video').toggleClass('active');
     // $('.slider-nav .items_slider--video').toggleClass('active');
   });
 
-$().fancybox({
-    selector : '.imglist a:visible'
-});
+
 
 
 $('.slider-nav .items_slider--video').click(function(){ 
@@ -423,6 +419,8 @@ $(document).on('click', '.play-button', function() {
     src = $video2.attr('src');
  
   $video2.attr('src', src + '&autoplay=1');
+
+
 
 
 });
