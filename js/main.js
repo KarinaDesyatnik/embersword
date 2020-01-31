@@ -35,6 +35,28 @@ $('.header__menu-button').click(function(){
 	});
 // -------start mobil menu menu--------
 
+$('.continue').click(function(){ 
+   
+    $(this).parent().parent().addClass('dropdown-list__item-content--full');
+
+  });
+
+jQuery(function($){
+  $(document).mouseup(function (e){ 
+    var div = $(".dropdown-list__item"); 
+   
+    if (!div.is(e.target) 
+        && div.has(e.target).length === 0) {
+      div.removeClass('dropdown-list__item-content--full');
+
+    }
+  });
+});
+// $('.dropdown-list__item').click(function(){ 
+   
+//     $(this).removeClass('dropdown-list__item-content--full');
+//   });
+
 // ------start sticky header------
 $(window).scroll(function() {
 if ($(this).scrollTop() > 1){
@@ -98,6 +120,11 @@ $(".faq-tab").click(function() {
 }).eq(0).addClass("active");
 
 
+ $('[data-fancybox="gallery1"]').fancybox({
+  transitionEffect: "fade",
+  transitionDuration: 0,
+
+});
 
 
 
@@ -441,3 +468,5 @@ $(document).on('click', '.play-button', function() {
 //  $('.media__play-button').addClass('active');
 
 // });
+
+
