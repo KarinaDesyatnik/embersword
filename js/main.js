@@ -120,12 +120,15 @@ $(".faq-tab").click(function() {
 }).eq(0).addClass("active");
 
 
+
+
+
+
  $('[data-fancybox="gallery1"]').fancybox({
   transitionEffect: "fade",
   transitionDuration: 0,
 
 });
-
 
 
 });
@@ -216,46 +219,46 @@ responsive: [
 
 
 
-if(window.innerWidth < 768) {
- $('.slider-all-news').slick({
-prevArrow: false,
-nextArrow: false,
-slidesToShow: 3,
+// if(window.innerWidth < 768) {
+//  $('.slider-all-news').slick({
+// prevArrow: false,
+// nextArrow: false,
+// slidesToShow: 3,
 
-responsive: [
-{
-    breakpoint: 768,
-    settings: {
-    slidesToShow: 3,
-    centerPadding: '50px',
-    centerMode: true
-    }
-  },
+// responsive: [
+// {
+//     breakpoint: 768,
+//     settings: {
+//     slidesToShow: 3,
+//     centerPadding: '50px',
+//     centerMode: true
+//     }
+//   },
    
-   {
-    breakpoint: 600,
-    settings: {
-      slidesToShow: 2,
-    centerPadding: '50px',
-    centerMode: true
+//    {
+//     breakpoint: 600,
+//     settings: {
+//       slidesToShow: 2,
+//     centerPadding: '50px',
+//     centerMode: true
      
      
-    }
-  },
-  {
-    breakpoint: 480,
-    settings: {
-      slidesToShow: 1,
-    centerPadding: '50px',
-    centerMode: true   
+//     }
+//   },
+//   {
+//     breakpoint: 480,
+//     settings: {
+//       slidesToShow: 1,
+//     centerPadding: '50px',
+//     centerMode: true   
      
-    }
-  },
-  ]
+//     }
+//   },
+//   ]
 
-});
+// });
 
-}
+// }
 
  $('.jobs__slider').slick({
     slidesToShow: 1,
@@ -452,6 +455,8 @@ $(document).on('click', '.play-button', function() {
 
 });
 
+
+
 // $(document).on('click', '.media__play-button.active', function() {
 //   var $video = $('#video'),
 //     src = $video.attr('src');
@@ -469,4 +474,10 @@ $(document).on('click', '.play-button', function() {
 
 // });
 
+
+$(function(){
+$(elements).lazyLoadXT();
+$.lazyLoadXT.onload.addClass = "animated bounceOutLeft";
+
+});
 
