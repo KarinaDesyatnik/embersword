@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>EmberSword</title>
 	<link href="https://fonts.googleapis.com/css?family=Exo+2:400,500|Lilita+One|Exo:400,600,600i|Poppins:400,500&display=swap" rel="stylesheet">
+	 <link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/slick.css">
 <link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
@@ -250,7 +251,7 @@
 
 	<div class="single-news__content-wrapper">
 		<div class="single-news__image-wrapper">
-			<img src="img/single-news-2.png" alt="">
+			<img data-src="img/single-news-2.png" alt="">
 			<div class="media__play-button media__play-btn video-popup-link">
 												
 											</div>
@@ -262,7 +263,7 @@
 				Jens Hilgers Joined the Party!
 			</h3>
 			<div class="single-news__image-wrapper">
-			<img src="img/single-news-2.png" alt="">
+			<img data-src="img/single-news-2.png" alt="">
 		</div>
 		<div class="team__text">
 			“We’re thrilled to have Jens Hilgers embark on our journey of pioneering a new type of competitive MMORPG experience for the next generation of players. Jens is an Esports godfather and a gaming pioneer with paramount insight into the competitive nature of games and gamers. 
@@ -321,7 +322,7 @@
 				
 			</div>
 			<div class="col-md-5">
-				<img src="img/reg-img.png" alt="" class="pre-register__image">
+				<img data-src="img/reg-img.png" alt="" class="pre-register__image">
 			</div>
 		</div>
 	</div>
@@ -520,15 +521,27 @@
 
 <!-- ---------------start video popup------------------ -->
 <div class="video-popup">
-	<div class="video-popup-wrapper">	
-		
-			<iframe src="https://www.youtube.com/embed/ftK9BBxK0pQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		
+	<a href="" class="popup-link">
+		<div class="video-popup-wrapper">	
 	
+		
+		<iframe id="video-trailer" src="https://www.youtube.com/embed/ftK9BBxK0pQ?rel=0&showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div class="close-video">
+			
+				<img src="img/close.svg" alt="">
+			
+			
+		</div>
+	
+</div>
+	</a>
+	
+
 </div>
 <!-- ------------------end video popup----------------- -->
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="js/lazy.js"></script>
 	<script src="js/libs.min.js"></script>
 	<script src="js/main.js"></script>
 </body>

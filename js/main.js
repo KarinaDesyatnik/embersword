@@ -457,27 +457,10 @@ $(document).on('click', '.play-button', function() {
 
 
 
-// $(document).on('click', '.media__play-button.active', function() {
-//   var $video = $('#video'),
-//     src = $video.attr('src');
- 
-//   $video.attr('src', src + '&pause');
-//  // $('.media__play-button').addClass('active');
-
-// });
-// $(document).on('click', '.media__play-button', function() {
-//   var $video = $('#video'),
-//     src = $video.attr('src');
- 
-//   $video.attr('src', src + '&autoplay=1');
-//  $('.media__play-button').addClass('active');
-
-// });
-
-
 $(function(){
 $(elements).lazyLoadXT();
-$.lazyLoadXT.onload.addClass = "animated bounceOutLeft";
+
 
 });
 
+$.lazyLoadXT.onload.addClass = "animated fadeIn";
